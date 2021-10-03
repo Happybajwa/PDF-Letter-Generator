@@ -58,29 +58,30 @@ namespace LetterGenerator
             this.panel1.Location = new System.Drawing.Point(3, 3);
             this.panel1.Margin = new System.Windows.Forms.Padding(10, 9, 10, 9);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(4594, 157);
+            this.panel1.Size = new System.Drawing.Size(769, 56);
             this.panel1.TabIndex = 0;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Lucida Sans", 27.9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label1.Font = new System.Drawing.Font("Calibri", 27.9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.label1.ForeColor = System.Drawing.Color.Black;
-            this.label1.Location = new System.Drawing.Point(384, 16);
+            this.label1.Location = new System.Drawing.Point(169, 0);
             this.label1.Margin = new System.Windows.Forms.Padding(10, 0, 10, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(1238, 105);
+            this.label1.Size = new System.Drawing.Size(438, 46);
             this.label1.TabIndex = 1;
             this.label1.Text = "Auto PDF Letter Generator";
+            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // label2
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Lucida Sans", 14.1F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label2.Location = new System.Drawing.Point(59, 178);
+            this.label2.Location = new System.Drawing.Point(19, 79);
             this.label2.Margin = new System.Windows.Forms.Padding(10, 0, 10, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(298, 54);
+            this.label2.Size = new System.Drawing.Size(118, 22);
             this.label2.TabIndex = 1;
             this.label2.Text = "Select Date:";
             // 
@@ -88,10 +89,10 @@ namespace LetterGenerator
             // 
             this.datePicker.AllowDrop = true;
             this.datePicker.CalendarFont = new System.Drawing.Font("Lucida Sans", 14.1F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.datePicker.Location = new System.Drawing.Point(59, 248);
+            this.datePicker.Location = new System.Drawing.Point(19, 110);
             this.datePicker.Margin = new System.Windows.Forms.Padding(10, 9, 10, 9);
             this.datePicker.Name = "datePicker";
-            this.datePicker.Size = new System.Drawing.Size(776, 55);
+            this.datePicker.Size = new System.Drawing.Size(290, 26);
             this.datePicker.TabIndex = 2;
             this.datePicker.Value = new System.DateTime(2021, 10, 2, 13, 15, 10, 0);
             // 
@@ -99,96 +100,96 @@ namespace LetterGenerator
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Lucida Sans", 14.1F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label3.Location = new System.Drawing.Point(1202, 178);
+            this.label3.Location = new System.Drawing.Point(450, 79);
             this.label3.Margin = new System.Windows.Forms.Padding(10, 0, 10, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(368, 54);
+            this.label3.Size = new System.Drawing.Size(151, 22);
             this.label3.TabIndex = 3;
             this.label3.Text = "Enter Location:";
             // 
             // locationTextBox
             // 
-            this.locationTextBox.Location = new System.Drawing.Point(1202, 248);
+            this.locationTextBox.Location = new System.Drawing.Point(450, 110);
             this.locationTextBox.Multiline = true;
             this.locationTextBox.Name = "locationTextBox";
-            this.locationTextBox.Size = new System.Drawing.Size(511, 55);
+            this.locationTextBox.Size = new System.Drawing.Size(162, 26);
             this.locationTextBox.TabIndex = 4;
             // 
             // label4
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Lucida Sans", 14.1F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label4.Location = new System.Drawing.Point(46, 358);
+            this.label4.Location = new System.Drawing.Point(19, 155);
             this.label4.Margin = new System.Windows.Forms.Padding(10, 0, 10, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(533, 54);
+            this.label4.Size = new System.Drawing.Size(214, 22);
             this.label4.TabIndex = 5;
             this.label4.Text = "Sender(From Address)";
             // 
             // senderTextBox
             // 
-            this.senderTextBox.Location = new System.Drawing.Point(59, 425);
+            this.senderTextBox.Location = new System.Drawing.Point(19, 192);
             this.senderTextBox.Multiline = true;
             this.senderTextBox.Name = "senderTextBox";
-            this.senderTextBox.Size = new System.Drawing.Size(776, 372);
+            this.senderTextBox.Size = new System.Drawing.Size(290, 157);
             this.senderTextBox.TabIndex = 6;
             // 
             // label5
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Lucida Sans", 14.1F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label5.Location = new System.Drawing.Point(1202, 358);
+            this.label5.Location = new System.Drawing.Point(441, 155);
             this.label5.Margin = new System.Windows.Forms.Padding(10, 0, 10, 0);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(511, 54);
+            this.label5.Size = new System.Drawing.Size(204, 22);
             this.label5.TabIndex = 7;
             this.label5.Text = "Receiver(To Address)";
             // 
             // receiverTextBox
             // 
-            this.receiverTextBox.Location = new System.Drawing.Point(1202, 425);
+            this.receiverTextBox.Location = new System.Drawing.Point(439, 192);
             this.receiverTextBox.Multiline = true;
             this.receiverTextBox.Name = "receiverTextBox";
-            this.receiverTextBox.Size = new System.Drawing.Size(777, 372);
+            this.receiverTextBox.Size = new System.Drawing.Size(293, 157);
             this.receiverTextBox.TabIndex = 8;
             // 
             // label6
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Lucida Sans", 14.1F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label6.Location = new System.Drawing.Point(59, 845);
+            this.label6.Location = new System.Drawing.Point(19, 374);
             this.label6.Margin = new System.Windows.Forms.Padding(10, 0, 10, 0);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(471, 54);
+            this.label6.Size = new System.Drawing.Size(188, 22);
             this.label6.TabIndex = 9;
             this.label6.Text = "Subject of Message";
+            this.label6.Click += new System.EventHandler(this.label6_Click);
             // 
             // subjectTextBox
             // 
-            this.subjectTextBox.Location = new System.Drawing.Point(59, 955);
+            this.subjectTextBox.Location = new System.Drawing.Point(19, 408);
             this.subjectTextBox.Multiline = true;
             this.subjectTextBox.Name = "subjectTextBox";
-            this.subjectTextBox.Size = new System.Drawing.Size(1920, 59);
+            this.subjectTextBox.Size = new System.Drawing.Size(713, 26);
             this.subjectTextBox.TabIndex = 10;
             // 
             // label7
             // 
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Lucida Sans", 14.1F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label7.Location = new System.Drawing.Point(59, 1056);
+            this.label7.Location = new System.Drawing.Point(19, 448);
             this.label7.Margin = new System.Windows.Forms.Padding(10, 0, 10, 0);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(416, 54);
+            this.label7.Size = new System.Drawing.Size(166, 22);
             this.label7.TabIndex = 11;
             this.label7.Text = "Body of Message";
-            this.label7.Click += new System.EventHandler(this.label7_Click);
             // 
             // bodyTextBox
             // 
-            this.bodyTextBox.Location = new System.Drawing.Point(59, 1132);
+            this.bodyTextBox.Location = new System.Drawing.Point(19, 483);
             this.bodyTextBox.Multiline = true;
             this.bodyTextBox.Name = "bodyTextBox";
-            this.bodyTextBox.Size = new System.Drawing.Size(1920, 928);
+            this.bodyTextBox.Size = new System.Drawing.Size(713, 329);
             this.bodyTextBox.TabIndex = 12;
             // 
             // submitButton
@@ -197,9 +198,9 @@ namespace LetterGenerator
             this.submitButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.submitButton.Font = new System.Drawing.Font("Lucida Sans", 14.1F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.submitButton.ForeColor = System.Drawing.Color.Black;
-            this.submitButton.Location = new System.Drawing.Point(1436, 2149);
+            this.submitButton.Location = new System.Drawing.Point(530, 843);
             this.submitButton.Name = "submitButton";
-            this.submitButton.Size = new System.Drawing.Size(543, 111);
+            this.submitButton.Size = new System.Drawing.Size(202, 32);
             this.submitButton.TabIndex = 13;
             this.submitButton.Text = "Generate Letter";
             this.submitButton.UseVisualStyleBackColor = false;
@@ -211,9 +212,9 @@ namespace LetterGenerator
             this.resetButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.resetButton.Font = new System.Drawing.Font("Lucida Sans", 14.1F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.resetButton.ForeColor = System.Drawing.Color.Black;
-            this.resetButton.Location = new System.Drawing.Point(747, 2149);
+            this.resetButton.Location = new System.Drawing.Point(265, 843);
             this.resetButton.Name = "resetButton";
-            this.resetButton.Size = new System.Drawing.Size(543, 111);
+            this.resetButton.Size = new System.Drawing.Size(202, 32);
             this.resetButton.TabIndex = 14;
             this.resetButton.Text = "Reset ";
             this.resetButton.UseVisualStyleBackColor = false;
@@ -225,9 +226,9 @@ namespace LetterGenerator
             this.exitButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.exitButton.Font = new System.Drawing.Font("Lucida Sans", 14.1F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.exitButton.ForeColor = System.Drawing.Color.Black;
-            this.exitButton.Location = new System.Drawing.Point(59, 2149);
+            this.exitButton.Location = new System.Drawing.Point(19, 843);
             this.exitButton.Name = "exitButton";
-            this.exitButton.Size = new System.Drawing.Size(543, 111);
+            this.exitButton.Size = new System.Drawing.Size(188, 32);
             this.exitButton.TabIndex = 15;
             this.exitButton.Text = "Exit";
             this.exitButton.UseVisualStyleBackColor = false;
@@ -235,10 +236,10 @@ namespace LetterGenerator
             // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(24F, 45F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 18F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Gray;
-            this.ClientSize = new System.Drawing.Size(2035, 2457);
+            this.ClientSize = new System.Drawing.Size(760, 902);
             this.Controls.Add(this.exitButton);
             this.Controls.Add(this.resetButton);
             this.Controls.Add(this.submitButton);
@@ -261,6 +262,7 @@ namespace LetterGenerator
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(0);
             this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "Form1";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Letter Generator";

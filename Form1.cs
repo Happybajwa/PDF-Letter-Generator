@@ -123,7 +123,17 @@ namespace LetterGenerator
                 // use Exist method of file class in c# which is available in system
                 if(System.IO.File.Exists(path))
                 {
-                    MessageBox.Show("Letter has been created Successfully","Success");
+                    DialogResult okay = MessageBox.Show("Letter has been created Successfully","Success");
+                    if(okay.Equals(DialogResult.OK))
+                    {
+                        DialogResult result = MessageBox.Show("Do you want to email this letter", "Email Form", MessageBoxButtons.YesNo);
+                        if (result.Equals(DialogResult.Yes))
+                        {
+                            EmailForm emailform = new();
+                            this.Hide();
+                            emailform.ShowDialog();
+                        }
+                    }     
                 }
             }
             catch (Exception ex)
@@ -152,7 +162,12 @@ namespace LetterGenerator
 
         }
 
-        private void label7_Click(object sender, EventArgs e)
+        private void label6_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label1_Click(object sender, EventArgs e)
         {
 
         }
