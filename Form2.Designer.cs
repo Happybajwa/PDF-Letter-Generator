@@ -84,6 +84,7 @@ namespace LetterGenerator
             this.openLetterFormButton.Text = "Open Letter Generator";
             this.openLetterFormButton.UseVisualStyleBackColor = true;
             this.openLetterFormButton.UseWaitCursor = true;
+            this.openLetterFormButton.Click += new System.EventHandler(this.openLetterFormButton_Click_1);
             // 
             // sendEmailButton
             // 

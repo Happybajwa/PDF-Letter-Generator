@@ -19,12 +19,6 @@ namespace LetterGenerator
         {
             InitializeComponent();
         }
-        private void openLetterFormButton_Click(object sender, EventArgs e)
-        {
-            Form1 form = new();
-            this.Hide();
-            form.Show();
-        }
         //Open file dialog box when link is clicked
 
         private void openFileDialog1_FileOk(object sender, CancelEventArgs e)
@@ -107,6 +101,13 @@ namespace LetterGenerator
         private void attachmentButton_Click_1(object sender, EventArgs e)
         {
             openFileDialog1.ShowDialog();
+        }
+
+        private void openLetterFormButton_Click_1(object sender, EventArgs e)
+        {
+            Form1 form = new();
+            this.Hide();
+            form.Show();
         }
     }
 }

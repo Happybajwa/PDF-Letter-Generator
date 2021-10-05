@@ -4,6 +4,7 @@
     <OutputType>WinExe</OutputType>
     <TargetFramework>net5.0-windows</TargetFramework>
     <UseWindowsForms>true</UseWindowsForms>
+    <ApplicationIcon>Dtafalonso-Modern-Xp-ModernXP-74-Software-Install.ico</ApplicationIcon>
   </PropertyGroup>
 
   <ItemGroup>

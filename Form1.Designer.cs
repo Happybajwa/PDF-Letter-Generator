@@ -55,10 +55,10 @@ namespace LetterGenerator
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.panel1.Controls.Add(this.label1);
-            this.panel1.Location = new System.Drawing.Point(3, 3);
+            this.panel1.Location = new System.Drawing.Point(0, 3);
             this.panel1.Margin = new System.Windows.Forms.Padding(10, 9, 10, 9);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(769, 56);
+            this.panel1.Size = new System.Drawing.Size(760, 56);
             this.panel1.TabIndex = 0;
             // 
             // label1
@@ -239,7 +239,7 @@ namespace LetterGenerator
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 18F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Gray;
-            this.ClientSize = new System.Drawing.Size(760, 902);
+            this.ClientSize = new System.Drawing.Size(753, 902);
             this.Controls.Add(this.exitButton);
             this.Controls.Add(this.resetButton);
             this.Controls.Add(this.submitButton);
